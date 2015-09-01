@@ -1,0 +1,31 @@
+(a) How many commits have been done to the repository? (5 points)
+ans: 2 new commits and 6 old commits 
+(b) When was the File .gitignore modified last? (5 points)
+ans: Aug 21, 2015
+(c) List the Files, which were in the repository on 08/21/2015 at 11:00PM. (5
+points)
+ans: Following files were available on  08/21/2015 at 11:00PM
+HardwoodSeller.java
+WoodItem.java
+.classpath	
+.gitattributes	
+.gitignore	
+.project	
+README.txt.txt
+(d) How many times was each of the Files inside the src folder modified? (5 points)
+ans:
+HardwoodSeller.java - modified 1 time
+WoodItem.java - modified 2 times
+(e) What is the difference between git log and git status? (5 points)
+ans:
+Git log keeps a snapshot of all the commits done in the branch, with their commit code,commit message,and the author information.
+Git status merely gives the current status of the branch as in which files are changed,which files are staged of committing.
+(f) What command would you use to see the commits where \main.java" was
+one of the commited Files? (5 points)
+ans: git log --follow main.java
+(g) What command would you use to see the commits whose commit message
+contains the word \transaction"? (5 points)
+ans: git log --all --grep='transaction'
+(h) What command would you use to see the commits made by \Lauren" between
+01/05/2014 and 06/14/2015? (5 points)
+ans: git log --after='2015-06-14' --before='2014-01-05' --author='Lauren'
