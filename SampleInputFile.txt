@@ -1,0 +1,6 @@
+Florida State University;600 W. College Avenue, Tallahassee, FL 32306;08/20/2015
+White Oak:500;Wenge:520
+Kansas State University;650 EastAvenue, Kansas, UL 32306;08/01/2015
+White Oak:500;Wenge:520;Genuine Mahogany:520
+University of houston;600 W. College Ave, Houston, Texas 32306;09/20/2015
+White Oak:300;Wenge:10;Cherry:404;Sawdust:250

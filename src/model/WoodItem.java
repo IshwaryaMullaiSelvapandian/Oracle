@@ -1,74 +1,133 @@
-/**
- * Class defining the elements of a wood type
- */
 package model;
 
 /**
- * @author USER
+ * Class defining the elements of a wood type
+ */
+
+/**
+ * 
+ * @author Ishwarya Mullai Selvapandian
  *
  */
 public class WoodItem {
 
-	String type;
-	Double baseDeliveryTime;
-	Double price;
 	
-	/**
-	 * Default constructor 
-	 */
-	public WoodItem(){
-		this.type = "Empty";
-		this.baseDeliveryTime = 0.0;
-		this.price = 0.0;
-	}
-	
-	/**
-	 * Constructor of a WoodItem element with parameters
-	 * @param type Name of the wood type
-	 * @param daseDeliveryTime base delivery time
-	 * @param price price per Bare Foot
-	 */
-	public WoodItem(String type, Double daseDeliveryTime, Double price) {
-		this.type = type;
-		this.baseDeliveryTime = daseDeliveryTime;
-		this.price = price;
-	}
+	String name,address,date,type;
+
+	double quantity,priceOfEachItem,totalPrice,maxDeliverytime;
 
 	/**
-	 * Get the type of Wood
-	 * 
-	 * @return Name of the WoodItem
+	 * Default constructor
 	 */
+	public WoodItem() {
+		this.name = "Empty";
+		this.address = "Empty";
+		this.date = "Empty";
+		this.type = "Empty";
+		this.quantity = 0.0;
+		this.priceOfEachItem = 0.0;
+
+		this.totalPrice = 0.0;
+		this.maxDeliverytime = 0.0;
+	}
+
+
+/**
+ * Constructor of a WoodItem element with parameters
+ * @param name:name of the customer
+ * @param address:address of the customer 
+ * @param date:purchased date
+ * @param type:type of wood
+ * @param quantity
+ * @param priceOfEachItem:price per Board Foot
+ * @param totalPrice
+ * @param maxDeliverytime: Estimated delivery time
+ */
+	public WoodItem(String name, String address, String date, String type,
+			double quantity, double priceOfEachItem, double totalPrice,
+			double maxDeliverytime) {
+		this.name = name;
+		this.address = address;
+		this.date = date;
+		this.type = type;
+		this.quantity = quantity;
+		this.priceOfEachItem = priceOfEachItem;
+
+		this.totalPrice = totalPrice;
+		this.maxDeliverytime = maxDeliverytime;
+	}
+
 	public String getType() {
 		return type;
 	}
 
-	/**
-	 * Get the base delivery time
-	 * 
-	 * @return the baseDeliverytime
-	 */
-	public Double getDaseDeliveryTime() {
-		return baseDeliveryTime;
+	public void setType(String type) {
+		this.type = type;
 	}
 
-	/**
-	 * 
-	 * Get the price per Bare Foot
-	 * 
-	 * @return the price for 1 Bare Foot of this WoodItem
-	 */
-	public Double getPrice() {
-		return price;
+	public double getQuantity() {
+		return quantity;
 	}
 
-	/* (non-Javadoc)
-	 * @see java.lang.Object#toString()
-	 * You may implement this method to fit your needs
-	 */
+	public void setQuantity(double quantity) {
+		this.quantity = quantity;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public String getDate() {
+		return date;
+	}
+
+	public void setDate(String date) {
+		this.date = date;
+	}
+
+	public double getPriceOfEachItem() {
+		return priceOfEachItem;
+	}
+
+	public void setPriceOfEachItem(double priceOfEachItem) {
+		this.priceOfEachItem = priceOfEachItem;
+	}
+
+	public double getTotalPrice() {
+		return totalPrice;
+	}
+
+	public void setTotalPrice(double totalPrice) {
+		this.totalPrice = totalPrice;
+	}
+
+	public double getMaxDeliverytime() {
+		return maxDeliverytime;
+	}
+
+	public void setMaxDeliverytime(double maxDeliverytime) {
+		this.maxDeliverytime = maxDeliverytime;
+	}
+
 	@Override
-	public String toString() {	
-		return "";
+	public String toString() {
+
+		String result = "TotalPrice: " + totalPrice + "\n";
+		result += "Estimated Delivery Time: " + maxDeliverytime+"\n"+"\n";
+
+		return result;
 	}
-	
+
 }
